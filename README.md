@@ -16,3 +16,9 @@
 - Cand miscarea este implementata in functia Start(), cubul se deplaseaza o singura data la pornirea scenei, cu o distanta fixa
 - Cand miscarea este implementata in functia Update(), cubul se misca in mod repetat, cate putin, la fiecare cadru. Astfel, miscarea este continua, dar viteza depinde de numarul de cadre pe   
   secunda (FPS)
+
+---
+
+## Exercitiul 6
+
+- Cubul aflat in miscare intra pana in mijlocul cubului static si il impinge la dreapta, dar la a doua coliziune cubul static nu mai este impins cu aceeasi putere

@@ -4,6 +4,7 @@ public class MiscareSfera : MonoBehaviour
 {
     public float fortaDeImpuls = 100;
     public Transform cameraTransform;
+    public float fortaDeSaritura = 50;
 
     private Rigidbody rb;
 
@@ -30,5 +31,14 @@ public class MiscareSfera : MonoBehaviour
         Vector3 directie = camFata * miscareVerticala + camDreapta * miscareOrizontala;
 
         rb.AddForce(directie * fortaDeImpuls);
+
+        // Verificare dacă este pe pământ
+        bool estePePamant = Physics.Raycast(transform.position, Vector3.down, 1.1f);
+
+        // Săritură
+        if (Input.GetKeyDown(KeyCode.Space) && estePePamant)
+        {
+            rb.AddForce(Vector3.up * fortaDeSaritura, ForceMode.Impulse);
+        }
     }
 }

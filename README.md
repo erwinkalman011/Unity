@@ -22,3 +22,10 @@
 ## Exercitiul 6
 
 - Cubul aflat in miscare intra pana in mijlocul cubului static si il impinge la dreapta, dar la a doua coliziune cubul static nu mai este impins cu aceeasi putere
+
+---
+
+## Exercitiul 9
+
+- Comportamentul obiectelor in modul Play:
+  Sfera trece prin plante fara sa le afecteze, deoarece acestea sunt setate ca kinematic - nu raspund la forte fizice.
